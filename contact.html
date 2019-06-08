@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | ADRPhotography</title>
+    <meta name="description" content="Contacts page classic with contact form in HTML.">
+    <script src="scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.css">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="icon" href="images/favicon.png">
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<!-- Copyright © 2021 Framework Y WordPress Theme. All Rights Reserved. --> 
+</head>
+<body class="contacts">
+    <div id="preloader"></div>
+    <header data-menu-anima="fade-left">
+        <div class="navbar navbar-default over wide-area" role="navigation">
+            <div class="navbar navbar-main over">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/ADRPLogoLight.png" alt="logo"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav over mega-menu-fullwidth">
+                            <li class="dropdown">
+                                <a href="index.html" role="button">Home</a>
+                            </li>
+							<!-- About --------------------------------------------------------------------------------------------------------------->
+                            <li class="dropdown">
+                                <a href="aboutme.html" role="button">About</a>
+                            </li>
+							<!-- Gallery ------------------------------------------------------------------------------------------------------------->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Gallery <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="gallery-abs.html">Abstract</a></li>
+                                    <li><a href="gallery-agr.html">Agriculture</a></li>
+                                    <li><a href="gallery-ast.html">Astrophotography</a></li>
+                                    <li><a href="gallery-lan.html">Landscapes</a></li>
+									<li><a href="gallery-mis.html">Miscellaneous</a></li>
+                                    <li><a href="gallery-nat.html">Nature</a></li>
+									<li><a href="gallery-pet.html">Pets</a></li>
+                                    <li><a href="gallery-tec.html">Technology</a></li>
+                                </ul>
+                            </li>
+							<!-- Contact ------------------------------------------------------------------------------------------------------------->
+                            <li class="dropdown active current-active">
+                                <a href="contact.html" role="button">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="navbar-left custom-area">
+                                Copyright © 2019 ADRPhotography
+                            </div>
+                            <div class="btn-group navbar-left navbar-social">
+                                <div class="btn-group social-group">
+									<a target="_blank" rel="noreferrer" href="https://www.instagram.com/mitsufishy/"><i class="fa fa-instagram" style="color:white"></i></a>
+									<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andy-roberts-38981486/"><i class="fa fa-linkedin" style="color:white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section-empty">
+        <div class="google-map" data-marker="images/marker.png" data-address="coventry, united kingdom" data-skin="gray" data-zoom="11" data-marker-pos-top="20"></div>
+		<div class="container content">
+            <div class="row">
+                <div class="col-md-12">
+					<!-- <form action="http://www.adrphotography.co.uk/scripts/php/contact-form.php" class="form-box form-ajax" method="post"> -->
+					<form action="https://formspree.io/robertsandrewdavid@gmail.com" method="POST" />
+						<h3>ANY QUESTIONS? GET IN CONTACT</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Name</p>
+								<input id="Name" name="Name" placeholder="Name" type="text" class="form-control form-value" required>
+							</div>
+							<div class="col-md-6">
+								<p>Email</p>
+								<input id="Email" name="Email" placeholder="Email" type="email" class="form-control form-value" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<hr class="space xs"/>
+								<p>Phone</p>
+								<input id="Phone" name="Phone" placeholder="Phone" type="text" class="form-control form-value">
+								<hr class="space xs"/>
+								<p>Message</p>
+								<textarea id="Message" name="Message" placeholder="Message" class="form-control form-value" required></textarea>
+								<hr class="space s"/>
+								<button class="anima-button circle-button btn-sm btn" type="submit"><i class="fa fa-envelope-o"></i>SUBMIT MESSAGE</button>
+								<!-- <button class="g-recaptcha" data-sitekey="6Ld4qF4UAAAAAPsKwaATgiyc_gvzoswe_2I0IwvX" data-callback="YourOnSubmitFn"><i class="fa fa-envelope-o"></i>Submit</button> -->
+							</div>
+						</div>
+						<br>
+						<!-- <div class="success-box">
+							<div class="alert alert-success">Thank you. Your message is on its way.</div>
+						</div>
+						<div class="error-box">
+							<div class="alert alert-warning">Error, please retry. Your message has not been sent.</div>
+						</div> -->
+					</form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="wide-area">
+        <link property="" rel="stylesheet" href="scripts/font-awesome/css/font-awesome.min.css">
+        <script async src="scripts/bootstrap/js/bootstrap.min.js"></script>
+        <script src="scripts/imagesloaded.min.js"></script>
+        <script src='scripts/php/contact-form.js'></script>
+        <script src='scripts/jquery.tab-accordion.js'></script>
+        <script src='scripts/smooth.scroll.min.js'></script>
+		<script src='scripts/google.maps.min.js'></script>
+        <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    </footer>
+</body>
+</html>
